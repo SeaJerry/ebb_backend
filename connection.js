@@ -1,13 +1,13 @@
-const mongoose = require("mongoose");
+// const mongoose = require("mongoose");
 
-let mongoURL = "";
+// let mongoURL = "";
 
-if (process.env.NODE_ENV === "production") {
-  mongoURL = process.env.DB_URL;
-} else {
-  mongoURL = "mongodb://localhost/ebb_backend"; // match current mongodb for localhost
-}
+// if (process.env.NODE_ENV === "production") {
+//   mongoURL = process.env.DB_URL;
+// } else {
+//   mongoURL = "mongodb://localhost/ebb_backend"; // match current mongodb for localhost
+// }
 
-mongoose.connect(mongoURL);
+// mongoose.connect(mongoURL);
 
-module.exports = mongoose;
+// module.exports = mongoose;

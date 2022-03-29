@@ -1,17 +1,31 @@
-require('dotenv').config()
-const express = require('express')
-const logger = require('morgan')
-const cors = require('cors')
+const express = require("express");
+const app = express();
+const dotenv = require("dotenv");
+const mongoose = require("mongoose");
+const logger = require("morgan");
+const cors = require("cors");
+const authRoute = require("./routes/auth");
 
-
-const PORT = process.env.PORT
-
-const app = express()
-app.use(express.urlencoded({extended:false}));
+dotenv.config();
 app.use(express.json());
-app.use(logger('dev'));
-app.use(cors())
 
-app.listen(PORT, () => {
-    console.log(`Listening in on port: ${PORT}`)
-})
+mongoose
+  .connect(process.env.MONGO_URL, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    // useCreateIndex: true,
+    // useFindAndModify: true,
+  })
+  .then(console.log("Connected to MongoDB"))
+  .catch((err) => console.log(err));
+
+// app.use(logger("dev"));
+// app.use(cors());
+
+app.use("/auth", authRoute);
+
+
+
+app.listen("3000", () => {
+  console.log("Listening in on port: 3000");
+});
