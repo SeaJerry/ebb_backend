@@ -9,8 +9,13 @@ As a regular Ebb app user, I want to share my traveling experiences with others 
 
 ## Project Links
 
+Client
+- [Client Repo](https://github.com/SeaJerry/ebb_client)
+- [Deployed Client]()
+
 Server
-- [Server](https://github.com/SeaJerry/ebb_server)
+- [Server Repo](https://github.com/SeaJerry/ebb_server)
+- [Deployed Server](https://murmuring-inlet-81483.herokuapp.com/posts) 
 
 ```
 ```
@@ -33,11 +38,11 @@ Server
 - Single Blog Post Component
 - CRUD on Blog Post
 _ Responsive Design
-- PSQL
+
 
 
 # Server Side
-- Django 
+- Express
 - User Model
 - Blog Model
 - Comment Model
@@ -81,19 +86,19 @@ MVP
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-|Nav | H | 2 hrs| hr | hrs  |
-|Blog | H | 10 hrs| hr | hrs  |
-|Post | H| 8hrs| hrs | hrs  |
-|Single Post | H | 6hrs | hrs | hrs |
+|Nav | H | 2 hrs| 1hr | 1hrs  |
+|Blog | H | 10 hrs| 9hr | 9hrs  |
+|Post | H| 8hrs| 10hrs | 10hrs  |
+|Single Post | H | 6hrs | 5hrs | 5hrs |
 
-| Total | H | 26 hrs|  | |
+| Total | H | 26 hrs| 30hrs  | 30hrs |
 
 Post MVP
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 
-|Sign Up | H |7hrs |hrs | hrs  |
+|Sign Up | H |7hrs |6hrs | 6hrs  |
 |Sign In | H |6hrs |hrs | hrs  |
 
 
@@ -101,7 +106,7 @@ Post MVP
 
 ## Additional Libraries
 - React
-- Django
+- Express
 - Rest FrameWork
 - React Fonts
 
