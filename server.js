@@ -1,13 +1,15 @@
+require('dotenv').config()
 const express = require("express");
-const app = express();
-const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 const logger = require("morgan");
 const cors = require("cors");
 const authRoute = require("./routes/auth");
 const postsRoute = require("./routes/posts");
 
-dotenv.config();
+
+const PORT = process.env.PORT
+
+const app = express();
 app.use(express.json());
 app.use(logger("dev"));
 app.use(cors());
@@ -27,6 +29,6 @@ app.use("/posts", postsRoute);
 
 
 
-app.listen("3000", () => {
-  console.log("Listening in on port: 3000");
+app.listen(PORT, () => {
+  console.log(`Listening in on port: ${PORT}`);
 });

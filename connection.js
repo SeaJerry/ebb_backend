@@ -8,6 +8,10 @@
 //   mongoURL = "mongodb://localhost/ebb_backend"; // match current mongodb for localhost
 // }
 
-// mongoose.connect(mongoURL);
+// mongoose.connect(mongoURL, {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true,
+// });
 
 // module.exports = mongoose;
+
