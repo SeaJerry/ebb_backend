@@ -83,7 +83,7 @@ router.delete("/:id", async (req, res) => {
     } else {
       res.status(400).json("Only allowed to delete your posts");
     }
-  } catch (error) {
+  } catch (err) {
     res.status(500).json(err);
   }
 });
