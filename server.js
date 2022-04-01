@@ -30,7 +30,7 @@ mongoose
   .catch((err) => console.log(err));
 
 app.use(function (req, res, next) {
-  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Origin", "https://seajerry.github.io/ebb_client/#/");
   res.setHeader(
     "Access-Control-Allow-Methods",
     "GET, POST, OPTIONS, PUT, PATCH, DELETE"
@@ -39,7 +39,7 @@ app.use(function (req, res, next) {
     "Access-Control-Allow-Headers",
     "X-Requested-With,content-type"
   );
-  res.setHeader("Access-Control-Allow-Credentials", false);
+  res.setHeader("Access-Control-Allow-Credentials", true);
   // handle OPTIONS method
   if ("OPTIONS" == req.method) {
     return res.sendStatus(200);
