@@ -30,7 +30,7 @@ mongoose
   .catch((err) => console.log(err));
 
 app.use(function (req, res, next) {
-  res.setHeader("Access-Control-Allow-Origin", "https://seajerry.github.io/ebb_client/#/");
+  res.setHeader("Access-Control-Allow-Origin", "https://seajerry.github.io");
   res.setHeader(
     "Access-Control-Allow-Methods",
     "GET, POST, OPTIONS, PUT, PATCH, DELETE"
